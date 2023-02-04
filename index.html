@@ -10,6 +10,7 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play CÁN.</tw-noscript></noscript></tw-story>
 <tw-storydata name="CÁN" startnode="1" creator="Twine" creator-version="2.6.0" format="Harlowe" format-version="3.3.4" ifid="F6D5CBE2-C133-4422-8A1A-8CE7060FEE4B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {visibility: hidden}
+style="visibility: hidden"
 body
 {
   overflow: hidden;
@@ -20,7 +21,15 @@ tw-story
 }
 tw-story[tags~="danger"]{
   background-color: black;
-  font-size: 300%;
+  font-size: 250%;
+}
+tw-story[tags~="Dangertxtsmall"]{
+background-color: black;
+font-size: 200%;
+}
+tw-story[tags~="BIG-TEXT"]{
+background-color: black;
+font-size: 300%;
 }
 img {
   max-width: 80%;
@@ -36,7 +45,12 @@ tw-passage
 }
 tw-passage[tags~="danger"]{
   color: red;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Danger" color="red"></tw-tag><tw-tag name="danger" color="red"></tw-tag><tw-passagedata pid="1" name="Door" tags="" position="100,900" size="100,100">&lt;/style&gt;
+}
+tw-passage[tags~="Dangertxtsmall"]{
+  color: red;
+}
+
+<link rel="shortcut icon" type="image/x-icon" href="Symbol.png"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Danger" color="red"></tw-tag><tw-tag name="danger" color="red"></tw-tag><tw-tag name="Dangertxtsmall" color="orange"></tw-tag><tw-tag name="BIG-TEXT" color="purple"></tw-tag><tw-passagedata pid="1" name="Door" tags="" position="100,900" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
@@ -68,11 +82,13 @@ You look to the corridor on the left, there&#39;s a figure at the end of it.
 
 You look to the corridor on the right, nothing.
 
+
 [[Door]]</tw-passagedata><tw-passagedata pid="5" name="Wait" tags="" position="100,500" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Corridor-left-dark.png&gt;
 &lt;/div&gt;
 
 They disappeared down the other corridor.
+
 
 [[Door -&gt; Turn to the door]]</tw-passagedata><tw-passagedata pid="6" name="Yell their way" tags="" position="1000,800" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Person-mid.png&gt;
@@ -162,16 +178,14 @@ Open the door.
 
 Ok, now go inside.
 
-
 [[Go inside]]
 [[Stay outside]]
 
-&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="19" name=" Open2" tags="" position="1600,800" size="100,100">&lt;/style&gt;
+&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;~~Strikethrough Text~~</tw-passagedata><tw-passagedata pid="19" name=" Open2" tags="" position="1600,800" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-Open.png&gt;
 &lt;/div&gt;
 
 Ok, now go inside.
-
 
 [[Go inside -&gt; Go inside]]
 [[Stay outside -&gt; ST2]]
@@ -181,14 +195,14 @@ Ok, now go inside.
 
 //It&#39;s cold inside.//
 
-
 [[Check the room]]
 [[Check the kitchen]]
 
-</tw-passagedata><tw-passagedata pid="21" name="Stay outside" tags="danger" position="800,600" size="100,100">&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="21" name="Stay outside" tags="Dangertxtsmall" position="800,600" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-OpenF.png&gt;
 &lt;/div&gt;
 Did you think this was an option?
+
 [[_______-&gt;Go inside]]
 [[_______-&gt;___]]</tw-passagedata><tw-passagedata pid="22" name="___" tags="danger" position="1000,600" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Eyes.png&gt;
@@ -197,12 +211,11 @@ YOU
 HAVE NO
 OPTION
 
-(live: 5s)[(go-to: &quot;Second door&quot;)]</tw-passagedata><tw-passagedata pid="23" name="Check the kitchen" tags="" position="900,200" size="100,100">&lt;/style&gt;
+(live: 5s)[(go-to: &quot;Open2&quot;)]</tw-passagedata><tw-passagedata pid="23" name="Check the kitchen" tags="" position="900,200" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 The kitchen looks pretty empty.
-
 
 [[Check the fridge]]
 [[Check the pantry]]
@@ -227,7 +240,7 @@ Looks pretty empty.
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
-The kitchen looks pretty empty.
+
 
 </tw-passagedata><tw-passagedata pid="27" name=" CTK2" tags="" position="1200,0" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
@@ -240,19 +253,23 @@ You should carefully consider your options.
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
-//It&#39;s cold inside.//
-
+//Ok. Stay Calm. Where am I?//
 
 [[Check the room-&gt;CR2]]
-[[Check the kitchen-&gt;CK2]]</tw-passagedata><tw-passagedata pid="32" name=" ST2" tags="danger" position="1700,1000" size="100,100">&lt;/style&gt;
+[[Check the kitchen-&gt;CK2]]</tw-passagedata><tw-passagedata pid="32" name=" ST2" tags="danger Dangertxtsmall" position="1700,1000" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-OpenF.png&gt;
 &lt;/div&gt;
-
 You knew better than this.
 
-
 [[_______-&gt; Go inside]]
-[[_______-&gt;____]]</tw-passagedata><tw-passagedata pid="33" name="____" tags="" position="1900,1000" size="100,100"></tw-passagedata><tw-passagedata pid="34" name="CR2" tags="" position="1800,800" size="100,100">&lt;/style&gt;
+[[Who are you?-&gt;____]]</tw-passagedata><tw-passagedata pid="33" name="____" tags="Dangertxtsmall" position="1900,1000" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-OpenF.png&gt;
+&lt;/div&gt;
+Why ask what you don&#39;t want answers to?
+
+[[You&#39;re right I don&#39;t -&gt;Open3]]
+[[I do]]
+</tw-passagedata><tw-passagedata pid="34" name="CR2" tags="" position="1800,800" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
@@ -265,7 +282,6 @@ No one here. The window&#39;s open.
 &lt;/div&gt;
 
 The kitchen looks pretty empty.
-
 
 [[Check the fridge-&gt;CF2]]
 [[Check the pantry-&gt;CP2]]</tw-passagedata><tw-passagedata pid="36" name="CP2" tags="" position="2000,600" size="100,100">&lt;/style&gt;
@@ -287,7 +303,24 @@ Do you know what happens when you run out of options?
 You should carefully consider your options.
 
 [[Check the pantry-&gt;CP2]]
-[[Go back to the entrance -&gt; Go inside]]</tw-passagedata><tw-passagedata pid="39" name="CW2" tags="" position="2100,800" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="CB2" tags="" position="2000,750" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="CUTB2" tags="" position="2000,850" size="100,100"></tw-passagedata></tw-storydata>
+[[Go back to the entrance -&gt; Go inside]]</tw-passagedata><tw-passagedata pid="39" name="CW2" tags="" position="2100,800" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="CB2" tags="" position="2000,750" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="CUTB2" tags="" position="2000,850" size="100,100"></tw-passagedata><tw-passagedata pid="42" name="Open2" tags="" position="700,300" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-Open.png&gt;
+&lt;/div&gt;
+
+Ok, now (color: red) [GO INSIDE].
+
+[[Go inside]]
+~~Stay outside~~
+
+&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="43" name="I do" tags="" position="2100,1050" size="100,100"></tw-passagedata><tw-passagedata pid="44" name="Open3" tags="" position="1600,700" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-Open.png&gt;
+&lt;/div&gt;
+
+(color: red)[Come in.]
+
+
+[[Go inside -&gt; Go inside]]
+~~YOU&#39;RE NOT LEAVING~~</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
