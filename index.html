@@ -30,6 +30,10 @@ tw-story[tags~="Main"]{
 background-color: black;
 font-size: 150%;
 }
+tw-story[tags~="YOU"]{
+  background-color: black;
+  font-size: 600%;
+}
 img {
   max-width: 80%;
 }
@@ -50,7 +54,10 @@ tw-passage[tags~="Dangertxtsmall"]{
 }
 tw-passage[tags~="Main"]{
   color: white;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document.head).append("<link rel='icon' href='https://raw.githubusercontent.com/Gwazyjustcause/C-N/main/images/Symbol.png'>");</script><tw-tag name="Danger" color="red"></tw-tag><tw-tag name="danger" color="red"></tw-tag><tw-tag name="Dangertxtsmall" color="orange"></tw-tag><tw-tag name="BIG-TEXT" color="purple"></tw-tag><tw-passagedata pid="1" name="Door" tags="" position="300,900" size="100,100">&lt;/style&gt;
+}
+tw-passage[tags~="YOU"]{
+  color: red;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document.head).append("<link rel='icon' href='https://raw.githubusercontent.com/Gwazyjustcause/C-N/main/images/Symbol.png'>");</script><tw-tag name="Danger" color="red"></tw-tag><tw-tag name="danger" color="red"></tw-tag><tw-tag name="Dangertxtsmall" color="orange"></tw-tag><tw-tag name="BIG-TEXT" color="purple"></tw-tag><tw-tag name="YOU" color="orange"></tw-tag><tw-passagedata pid="1" name="Door" tags="" position="300,900" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
@@ -343,8 +350,8 @@ This story is still a work in progress, for now it&#39;s no more than a 5 minute
 Please note, CĀN is currently rated 16+ for depictions of death, strong language and heavy subject matter.
 
 (css: &quot;font-size: 200%&quot;) + (color: red) [[[Start-&gt;Door]]]
-
-&lt;&lt;cacheaudio &quot;hello&quot; &quot;https://www.dropbox.com/s/39fhuve41gwiowo/Hello.mp3?dl=0&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="YOU" tags="danger" position="2400,1000" size="100,100">WE 
+</tw-passagedata><tw-passagedata pid="46" name="YOU" tags="YOU" position="2400,1000" size="100,100">
+WE 
 ARE 
 ONE
 
@@ -359,7 +366,21 @@ The police are now appealing to the public for any information that could help s
 
 &lt;audio autoplay&gt;
 &lt;source src=&quot;https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/Sounds/End1.mp3&quot; type=&quot;audio/mp3&quot;&gt;
-&lt;/audio&gt;</tw-passagedata></tw-storydata>
+&lt;/audio&gt;
+
+(live: 50s)[(go-to: &quot;Ending1&quot;)]</tw-passagedata><tw-passagedata pid="48" name="Ending1" tags="danger" position="2800,1000" size="100,100">
+
+
+
+(css: &quot;font-size: 150%&quot;) + (color: yellow)[Ending 1]
+
+
+Con... Congrats? You really speedran that hm?
+Well, I hope you got the ending you wanted.
+
+
+
+(css: &quot;font-size: 200%&quot;) + (color: red)[[Restart-&gt;Door]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
