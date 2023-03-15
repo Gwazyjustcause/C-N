@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play CĀN.</tw-noscript></noscript></tw-story>
-<tw-storydata name="CĀN" startnode="45" creator="Twine" creator-version="2.6.0" format="Harlowe" format-version="3.3.4" ifid="F6D5CBE2-C133-4422-8A1A-8CE7060FEE4B" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {visibility: hidden}
+<tw-storydata name="CĀN" startnode="43" creator="Twine" creator-version="2.6.0" format="Harlowe" format-version="3.3.4" ifid="F6D5CBE2-C133-4422-8A1A-8CE7060FEE4B" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {visibility: hidden}
 body
 {
   overflow: hidden;
@@ -34,6 +34,10 @@ tw-story[tags~="YOU"]{
   background-color: black;
   font-size: 600%;
 }
+tw-story[tags~="END1"]{
+  background-color: black;
+  font-size: 500%;
+}
 img {
   max-width: 80%;
 }
@@ -57,7 +61,10 @@ tw-passage[tags~="Main"]{
 }
 tw-passage[tags~="YOU"]{
   color: red;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document.head).append("<link rel='icon' href='https://raw.githubusercontent.com/Gwazyjustcause/C-N/main/images/Symbol.png'>");</script><tw-tag name="Danger" color="red"></tw-tag><tw-tag name="danger" color="red"></tw-tag><tw-tag name="Dangertxtsmall" color="orange"></tw-tag><tw-tag name="BIG-TEXT" color="purple"></tw-tag><tw-tag name="YOU" color="orange"></tw-tag><tw-passagedata pid="1" name="Door" tags="" position="300,900" size="100,100">&lt;/style&gt;
+}
+tw-passage[tags~="END1"]{
+  color: red;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document.head).append("<link rel='icon' href='https://raw.githubusercontent.com/Gwazyjustcause/C-N/main/images/Symbol.png'>");</script><tw-tag name="Danger" color="red"></tw-tag><tw-tag name="danger" color="red"></tw-tag><tw-tag name="Dangertxtsmall" color="orange"></tw-tag><tw-tag name="BIG-TEXT" color="purple"></tw-tag><tw-tag name="YOU" color="orange"></tw-tag><tw-passagedata pid="1" name="Door" tags="" position="1725,1525" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
@@ -66,7 +73,7 @@ Standing in front of an apartment door.
 
 [[Knock]]
 [[Look left]]
-[[Look right]]</tw-passagedata><tw-passagedata pid="2" name="Knock" tags="" position="700,900" size="100,100">&lt;/style&gt;
+[[Look right]]</tw-passagedata><tw-passagedata pid="2" name="Knock" tags="" position="2125,1525" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Knock.png&gt;
 &lt;/div&gt;
 
@@ -75,7 +82,7 @@ You knock three times.
 
 [[Door -&gt; If They Knocked]] 
 
-&lt;audio src=&quot;https://cdn.freesound.org/previews/629/629987_12715066-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="3" name="Look left" tags="" position="700,800" size="100,100">&lt;/style&gt;
+&lt;audio src=&quot;https://cdn.freesound.org/previews/629/629987_12715066-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="3" name="Look left" tags="" position="2125,1425" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Person-far.png&gt;
 &lt;/div&gt;
 
@@ -83,34 +90,34 @@ You look to the corridor on the left, there&#39;s a figure at the end of it.
 
 [[Wait]]
 [[Door -&gt;Turn To The Door]] 
-[[Yell their way]]</tw-passagedata><tw-passagedata pid="4" name="Look right" tags="" position="700,700" size="100,100">&lt;/style&gt;
+[[Yell their way]]</tw-passagedata><tw-passagedata pid="4" name="Look right" tags="" position="2125,1325" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Corridor-right.png&gt;
 &lt;/div&gt;
 
 You look to the corridor on the right, nothing.
 
 
-[[Door]]</tw-passagedata><tw-passagedata pid="5" name="Wait" tags="" position="200,500" size="100,100">&lt;/style&gt;
+[[Door]]</tw-passagedata><tw-passagedata pid="5" name="Wait" tags="" position="1625,1125" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Corridor-left-dark.png&gt;
 &lt;/div&gt;
 
 They disappeared down the other corridor.
 
 
-[[Door -&gt; Turn to the door]]</tw-passagedata><tw-passagedata pid="6" name="Yell their way" tags="" position="1100,800" size="100,100">&lt;/style&gt;
+[[Door -&gt; Turn to the door]]</tw-passagedata><tw-passagedata pid="6" name="Yell their way" tags="" position="2525,1425" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Person-mid.png&gt;
 &lt;/div&gt;
 
 //Are they looking my way?//
 
-(live: 0.7s)[(go-to: &quot;They move&quot;)]</tw-passagedata><tw-passagedata pid="7" name="Turn To The Door" tags="" position="200,400" size="100,100">&lt;/style&gt;
+(live: 0.7s)[(go-to: &quot;They move&quot;)]</tw-passagedata><tw-passagedata pid="7" name="Turn To The Door" tags="" position="1625,1025" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 You feel someone&#39;s staring at you.
 
 [[Knock]]
-[[Look Left]]</tw-passagedata><tw-passagedata pid="8" name="Look Left" tags="" position="500,400" size="100,100">&lt;/style&gt;
+[[Look Left]]</tw-passagedata><tw-passagedata pid="8" name="Look Left" tags="" position="1925,1025" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Corridor-left.png&gt;
 &lt;/div&gt;
 
@@ -118,22 +125,22 @@ You feel someone&#39;s staring at you.
 You should just open the door.
 
 
-[[Grab Keys]]</tw-passagedata><tw-passagedata pid="9" name="They move" tags="" position="1200,800" size="100,100">&lt;/style&gt;
+[[Grab Keys]]</tw-passagedata><tw-passagedata pid="9" name="They move" tags="" position="2625,1425" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Person-close-lightning.png&gt;
 &lt;/div&gt;
 
-(live: 0.7s)[(go-to: &quot;It&#39;s here&quot;)]</tw-passagedata><tw-passagedata pid="10" name=" Turn to the door" tags="" position="500,500" size="100,100">&lt;/style&gt;
+(live: 0.7s)[(go-to: &quot;It&#39;s here&quot;)]</tw-passagedata><tw-passagedata pid="10" name=" Turn to the door" tags="" position="1925,1125" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 You should just open the door.
 
 
-[[Grab Keys]]</tw-passagedata><tw-passagedata pid="11" name="It&#39;s here" tags="" position="1300,800" size="100,100">&lt;/style&gt;
+[[Grab Keys]]</tw-passagedata><tw-passagedata pid="11" name="It&#39;s here" tags="" position="2725,1425" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Person-close-white.png&gt;
 &lt;/div&gt;
 
-(live: 0.5s)[(go-to: &quot;Oh fuck&quot;)]</tw-passagedata><tw-passagedata pid="12" name="Oh fuck" tags="danger" position="1400,800" size="100,100">&lt;/style&gt;
+(live: 0.5s)[(go-to: &quot;Oh fuck&quot;)]</tw-passagedata><tw-passagedata pid="12" name="Oh fuck" tags="danger" position="2825,1425" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Person-close-dark.png&gt;
 &lt;/div&gt;
 
@@ -141,7 +148,7 @@ I know you.
  
 &lt;audio src=&quot;https://cdn.freesound.org/previews/159/159769_2578041-lq.mp3&quot; autoplay&gt;
 
-(live: 5s)[(go-to: &quot;Second door&quot;)]</tw-passagedata><tw-passagedata pid="13" name="Grab Keys" tags="" position="700,400" size="100,100">&lt;/style&gt;
+(live: 5s)[(go-to: &quot;Second door&quot;)]</tw-passagedata><tw-passagedata pid="13" name="Grab Keys" tags="" position="2125,1125" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Keys.png&gt;
 &lt;/div&gt;
 
@@ -150,7 +157,7 @@ Open the door.
 
 [[Door -&gt; Open]]
 
-&lt;audio src=&quot;https://cdn.freesound.org/previews/51/51445_333536-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="14" name=" If They Knocked" tags="" position="300,1000" size="100,100">&lt;/style&gt;
+&lt;audio src=&quot;https://cdn.freesound.org/previews/51/51445_333536-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="14" name=" If They Knocked" tags="" position="1725,1625" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
@@ -158,13 +165,13 @@ They&#39;re not answering.
 
 
 [[Look left]]
-[[Look right -&gt; The other right]]</tw-passagedata><tw-passagedata pid="15" name=" The other right" tags="" position="700,1000" size="100,100">&lt;/style&gt;
+[[Look right -&gt; The other right]]</tw-passagedata><tw-passagedata pid="15" name=" The other right" tags="" position="2125,1625" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Corridor-right.png&gt;
 &lt;/div&gt;
 
 You look to the corridor on the right, nothing.
 
-[[Door -&gt; If They Knocked]]</tw-passagedata><tw-passagedata pid="16" name="Second door" tags="" position="1500,800" size="100,100">&lt;/style&gt;
+[[Door -&gt; If They Knocked]]</tw-passagedata><tw-passagedata pid="16" name="Second door" tags="" position="2925,1425" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
@@ -172,7 +179,7 @@ You look to the corridor on the right, nothing.
 You need to get inside.
 
 
-[[Grab Keys -&gt; Grab Keys 2]]</tw-passagedata><tw-passagedata pid="17" name=" Grab Keys 2" tags="" position="1600,800" size="100,100">&lt;/style&gt;
+[[Grab Keys -&gt; Grab Keys 2]]</tw-passagedata><tw-passagedata pid="17" name=" Grab Keys 2" tags="" position="3025,1425" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Keys.png&gt;
 &lt;/div&gt;
 
@@ -181,7 +188,7 @@ Open the door.
 
 [[Door -&gt; Open2]]
 
-&lt;audio src=&quot;https://cdn.freesound.org/previews/51/51445_333536-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="18" name=" Open" tags="" position="800,400" size="100,100">&lt;/style&gt;
+&lt;audio src=&quot;https://cdn.freesound.org/previews/51/51445_333536-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="18" name=" Open" tags="" position="2225,1125" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-Open.png&gt;
 &lt;/div&gt;
 
@@ -190,7 +197,8 @@ Ok, now go inside.
 [[Go inside]]
 [[Stay outside]]
 
-&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="19" name=" Open2" tags="" position="1700,800" size="100,100">&lt;/style&gt;
+&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;
+(set: $bad to false)</tw-passagedata><tw-passagedata pid="19" name=" Open2" tags="" position="3125,1425" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-Open.png&gt;
 &lt;/div&gt;
 
@@ -199,29 +207,31 @@ Ok, now go inside.
 [[Go inside -&gt; Go inside]]
 [[Stay outside -&gt; ST2]]
 
-&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="20" name="Go inside" tags="" position="900,300" size="100,100">&lt;/style&gt;
+&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="20" name="Go inside" tags="" position="2325,925" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Hallway.png&gt;
 &lt;/div&gt;
 
 //It&#39;s cold inside.//
 
-[[Check the room]]
+[[Check the room -&gt; Room2]]
 [[Check the kitchen]]
 
-</tw-passagedata><tw-passagedata pid="21" name="Stay outside" tags="Dangertxtsmall" position="900,600" size="100,100">&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="21" name="Stay outside" tags="Dangertxtsmall" position="2375,1225" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-OpenF.png&gt;
 &lt;/div&gt;
 Did you think this was an option?
 
 [[_______-&gt;Go inside]]
-[[_______-&gt;___]]</tw-passagedata><tw-passagedata pid="22" name="___" tags="danger" position="1100,600" size="100,100">&lt;/style&gt;
+[[_______-&gt;___]]
+
+(set: $bad to true)</tw-passagedata><tw-passagedata pid="22" name="___" tags="danger" position="2525,1225" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Eyes.png&gt;
 &lt;/div&gt;
 YOU
 HAVE NO
 OPTION
 
-(live: 5s)[(go-to: &quot;Open2&quot;)]</tw-passagedata><tw-passagedata pid="23" name="Check the kitchen" tags="" position="1000,200" size="100,100">&lt;/style&gt;
+(live: 5s)[(go-to: &quot;Open2&quot;)]</tw-passagedata><tw-passagedata pid="23" name="Check the kitchen" tags="" position="2425,825" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
@@ -229,15 +239,15 @@ The kitchen looks pretty empty.
 
 [[Check the fridge]]
 [[Check the pantry]]
-</tw-passagedata><tw-passagedata pid="24" name="Check the room" tags="" position="1000,400" size="100,100">&lt;/style&gt;
-&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
+</tw-passagedata><tw-passagedata pid="24" name="Check the room" tags="" position="2825,1025" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Room.png&gt;
 &lt;/div&gt;
 
-No one here. The window&#39;s open.
+It&#39;s cold in here.
 
 [[Close window]]
 [[Check the bathroom]]
-[[Check under the bed]]</tw-passagedata><tw-passagedata pid="25" name="Check the fridge" tags="" position="1100,0" size="100,100">&lt;/style&gt;
+(if: $bad is false)[[Check the black drawer unit]]</tw-passagedata><tw-passagedata pid="25" name="Check the fridge" tags="" position="2525,625" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
@@ -246,33 +256,43 @@ Looks pretty empty.
 
 [[Go back -&gt; CTK2]]
 
-</tw-passagedata><tw-passagedata pid="26" name="Check the pantry" tags="" position="1200,200" size="100,100">&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="26" name="Check the pantry" tags="" position="2625,825" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 
 
-</tw-passagedata><tw-passagedata pid="27" name=" CTK2" tags="" position="1300,0" size="100,100">&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="27" name=" CTK2" tags="" position="2725,625" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 You should carefully consider your options.
 
 [[Check the pantry]]
-[[Go back to the entrance -&gt;Go inside]]</tw-passagedata><tw-passagedata pid="28" name="Check the bathroom" tags="" position="1200,350" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="Check under the bed" tags="" position="1200,450" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="Close window" tags="" position="1300,400" size="100,100"></tw-passagedata><tw-passagedata pid="31" name=" Go inside" tags="" position="1800,700" size="100,100">&lt;/style&gt;
+[[Go back to the entrance -&gt;Go inside]]</tw-passagedata><tw-passagedata pid="28" name="Check the bathroom" tags="" position="3025,825" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Room.png&gt;
+&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="29" name="Close window" tags="" position="3025,725" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Window.png&gt;
+&lt;/div&gt;
+
+//It&#39;s calm outside.//
+
+[[Look around -&gt; Room]]</tw-passagedata><tw-passagedata pid="30" name=" Go inside" tags="" position="3225,1325" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Hallway.png&gt;
 &lt;/div&gt;
 
 //Ok. Stay Calm. Where am I?//
 
 [[Check the room-&gt;CR2]]
-[[Check the kitchen-&gt;CK2]]</tw-passagedata><tw-passagedata pid="32" name=" ST2" tags="danger Dangertxtsmall" position="1800,1000" size="100,100">&lt;/style&gt;
+[[Check the kitchen-&gt;CK2]]</tw-passagedata><tw-passagedata pid="31" name=" ST2" tags="danger Dangertxtsmall" position="3225,1625" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Eyes.png&gt;
 &lt;/div&gt;
 You knew better than this.
 
 [[_______-&gt; Go inside]]
-[[Who are you?-&gt;____]]</tw-passagedata><tw-passagedata pid="33" name="____" tags="Dangertxtsmall" position="2000,1000" size="100,100">&lt;/style&gt;
+[[Who are you?-&gt;____]]</tw-passagedata><tw-passagedata pid="32" name="____" tags="Dangertxtsmall" position="3425,1625" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Smile.png&gt;
 &lt;/div&gt;
 Why ask what you don&#39;t want answers to?
@@ -280,41 +300,39 @@ Why ask what you don&#39;t want answers to?
 [[You&#39;re right, I don&#39;t -&gt;Open3]]
 
 (color: black)[[I do]]
-</tw-passagedata><tw-passagedata pid="34" name="CR2" tags="" position="1900,800" size="100,100">&lt;/style&gt;
-&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
+</tw-passagedata><tw-passagedata pid="33" name="CR2" tags="" position="3325,1425" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Room2.png&gt;
 &lt;/div&gt;
 
-No one here. The window&#39;s open.
 
-[[Close window-&gt;CW2]]
 [[Check the bathroom-&gt;CB2]]
-[[Check under the bed-&gt;CUTB2]]</tw-passagedata><tw-passagedata pid="35" name="CK2" tags="" position="1900,600" size="100,100">&lt;/style&gt;
+[[Check under the bed-&gt;CUTB2]]</tw-passagedata><tw-passagedata pid="34" name="CK2" tags="" position="3325,1225" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 The kitchen looks pretty empty.
 
 [[Check the fridge-&gt;CF2]]
-[[Check the pantry-&gt;CP2]]</tw-passagedata><tw-passagedata pid="36" name="CP2" tags="" position="2100,600" size="100,100">&lt;/style&gt;
+[[Check the pantry-&gt;CP2]]</tw-passagedata><tw-passagedata pid="35" name="CP2" tags="" position="3525,1225" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 The kitchen looks pretty empty.
-</tw-passagedata><tw-passagedata pid="37" name="CF2" tags="" position="2000,400" size="100,100">&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="36" name="CF2" tags="" position="3425,1125" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 Do you know what happens when you run out of options?
 
 [[Check the pantry-&gt;CTK3]]
-[[Go back to the entrance -&gt; Go inside]]</tw-passagedata><tw-passagedata pid="38" name="CTK3" tags="" position="2200,400" size="100,100">&lt;/style&gt;
+[[Go back to the entrance -&gt; Go inside]]</tw-passagedata><tw-passagedata pid="37" name="CTK3" tags="" position="3625,1125" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door1.png&gt;
 &lt;/div&gt;
 
 You should carefully consider your options.
 
 [[Check the pantry-&gt;CP2]]
-[[Go back to the entrance -&gt; Go inside]]</tw-passagedata><tw-passagedata pid="39" name="CW2" tags="" position="2200,800" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="CB2" tags="" position="2100,750" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="CUTB2" tags="" position="2100,850" size="100,100"></tw-passagedata><tw-passagedata pid="42" name="Open2" tags="" position="800,300" size="100,100">&lt;/style&gt;
+[[Go back to the entrance -&gt; Go inside]]</tw-passagedata><tw-passagedata pid="38" name="CB2" tags="" position="3525,1375" size="100,100"></tw-passagedata><tw-passagedata pid="39" name="CUTB2" tags="" position="3525,1475" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="Open2" tags="" position="2225,925" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-Open.png&gt;
 &lt;/div&gt;
 
@@ -323,13 +341,13 @@ Ok, now (color: red) [GO INSIDE].
 [[Go inside]]
 ~~Stay outside~~
 
-&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="43" name="I do" tags="danger" position="2200,1000" size="100,100">&lt;/style&gt;
+&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="41" name="I do" tags="danger" position="3625,1625" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Smile.png&gt;
 &lt;/div&gt;
 
 Don&#39;t you recognize me?
 
-(live: 3s)[(go-to: &quot;YOU&quot;)]</tw-passagedata><tw-passagedata pid="44" name="Open3" tags="" position="1700,700" size="100,100">&lt;/style&gt;
+(live: 3s)[(go-to: &quot;YOU&quot;)]</tw-passagedata><tw-passagedata pid="42" name="Open3" tags="" position="3125,1325" size="100,100">&lt;/style&gt;
 &lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Door-Open.png&gt;
 &lt;/div&gt;
 
@@ -339,7 +357,7 @@ Don&#39;t you recognize me?
 [[Go inside -&gt; Go inside]]
 ~~YOU&#39;RE NOT LEAVING~~
 
-&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="45" name="Main" tags="Main" position="100,900" size="100,100">&lt;/style&gt;
+&lt;audio src=&quot;https://cdn.freesound.org/previews/431/431117_5121236-lq.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="43" name="Main" tags="Main" position="1525,1525" size="100,100">&lt;/style&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Main-Page.png&quot; width=&quot;600px&quot; height=&quot;450px&quot;&gt;
 &lt;/div&gt;
 
@@ -350,12 +368,12 @@ This story is still a work in progress, for now it&#39;s no more than a 5 minute
 Please note, CĀN is currently rated 16+ for depictions of death, strong language and heavy subject matter.
 
 (css: &quot;font-size: 200%&quot;) + (color: red) [[[Start-&gt;Door]]]
-</tw-passagedata><tw-passagedata pid="46" name="YOU" tags="YOU" position="2400,1000" size="100,100">
+</tw-passagedata><tw-passagedata pid="44" name="YOU" tags="YOU" position="3825,1625" size="100,100">
 WE 
 ARE 
 ONE
 
-(live: 3s)[(go-to: &quot;End1&quot;)]</tw-passagedata><tw-passagedata pid="47" name="End1" tags="Dangertxtsmall" position="2600,1000" size="100,100">
+(live: 3s)[(go-to: &quot;End1&quot;)]</tw-passagedata><tw-passagedata pid="45" name="End1" tags="Dangertxtsmall" position="4025,1625" size="100,100">
 //A shocking and mysterious death has been reported in -------. A man, was found dead in his home with fatal stab wounds in his eyes. The police have declared the death a suicide, but the motive behind the self-inflicted wounds remains unknown.
 
 The man was found by a neighbor who became concerned after noticing the mail had been piling up for several days. The neighbor called the authorities who then discovered the man unresponsive and declared him dead at the scene.
@@ -368,7 +386,7 @@ The police are now appealing to the public for any information that could help s
 &lt;source src=&quot;https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/Sounds/End1.mp3&quot; type=&quot;audio/mp3&quot;&gt;
 &lt;/audio&gt;
 
-(live: 50s)[(go-to: &quot;Ending1&quot;)]</tw-passagedata><tw-passagedata pid="48" name="Ending1" tags="danger" position="2800,1000" size="100,100">
+(live: 48s)[(go-to: &quot;Ending1&quot;)]</tw-passagedata><tw-passagedata pid="46" name="Ending1" tags="danger" position="4225,1625" size="100,100">
 
 
 
@@ -378,6 +396,55 @@ The police are now appealing to the public for any information that could help s
 Con... Congrats? You really speedran that hm?
 Well, I hope you got the ending you wanted.
 
+
+
+(css: &quot;font-size: 200%&quot;) + (color: red)[[Restart-&gt;Door]]</tw-passagedata><tw-passagedata pid="47" name="Check the black drawer unit" tags="" position="3025,1025" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Drawer1.png&gt;
+&lt;/div&gt;
+
+A gun and a bottle of pills.
+
+[[Pick up the gun]]
+[[Pick up the bottle]]</tw-passagedata><tw-passagedata pid="48" name=" Room" tags="" position="3125,725" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Room-windowc.png&gt;
+&lt;/div&gt;
+
+//Much better.//
+
+[[Check the Bathroom]]
+[[Check the black drawer unit-&gt; CBDU]]</tw-passagedata><tw-passagedata pid="49" name="Check the Bathroom" tags="" position="3325,625" size="100,100"></tw-passagedata><tw-passagedata pid="50" name=" CBDU" tags="" position="3325,725" size="100,100"></tw-passagedata><tw-passagedata pid="51" name=" Room2" tags="" position="2625,1025" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Roomdark.png&gt;
+&lt;/div&gt;
+
+//I can&#39;t see anything. I&#39;m gonna turn on the light.//
+
+(live: 2s)[(go-to: &quot;Check the room&quot;)]</tw-passagedata><tw-passagedata pid="52" name="Pick up the gun" tags="" position="3225,1025" size="100,100"></tw-passagedata><tw-passagedata pid="53" name="Pick up the bottle" tags="" position="3225,925" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Drawer1.png&gt;
+&lt;/div&gt;
+
+//This name... it&#39;s MY name.//
+
+[[Take Pills]]</tw-passagedata><tw-passagedata pid="54" name="Re" tags="END1" position="3425,925" size="100,100">
+When tomorrow comes, 
+I&#39;ll be here.
+Waiting to see you 
+AGAIN.
+
+(live: 5s)[(go-to: &quot;Ending 2&quot;)]</tw-passagedata><tw-passagedata pid="55" name="Take Pills" tags="" position="3325,925" size="100,100">&lt;/style&gt;
+&lt;img src=https://raw.githubusercontent.com/Gwazyjustcause/The-Room/main/images/Roof.png&gt;
+&lt;/div&gt;
+
+You realize the sign you&#39;d miss before, you&#39;re home, this is YOUR home.
+You take the pills and lay on the bed.
+Soon I will disappear, much like the fear and confusion.
+
+
+(live: 10s)[(go-to: &quot;Re&quot;)]</tw-passagedata><tw-passagedata pid="56" name="Ending 2" tags="danger" position="3625,925" size="100,100">(css: &quot;font-size: 150%&quot;) + (color: yellow)[Ending 2]
+
+
+The best ending!
+I didn&#39;t make achievements for the game, but if I did you&#39;d have one!
+No scares for you hm? The lucky one.
 
 
 (css: &quot;font-size: 200%&quot;) + (color: red)[[Restart-&gt;Door]]</tw-passagedata></tw-storydata>
